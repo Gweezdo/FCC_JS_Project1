@@ -1,20 +1,21 @@
-// Return true if the given string is a palindrome. Otherwise, return false.
+// function palindrome(str) {
 
-// A palindrome is a word or sentence that's spelled the same way both forward and backward, ignoring punctuation, case, and spacing.
+  // make a copy of the string to adhear to functional programming best practice
+  // use Regex to remove all punctuation from the string, turn all characters to lower case and remove all white space.
+  // turn this string into an array
+  // initialize a new blank array for the revesed string to be pushed to
+  // run for loop to reverse the string
 
-// Note
-// You'll need to remove all non-alphanumeric characters (punctuation, spaces and symbols) and turn everything into the same case (lower or upper case) in order to check for palindromes.
+  // let strCopy = str.slice();
+  // console.log(strCopy);
+    
 
-// We'll pass strings with varying formats, such as "racecar", "RaceCar", and "race CAR" among others.
-
-// We'll also pass strings with special symbols, such as "2A3*3a2", "2A3 3a2", and "2_A3*3#A2".
-
-function palindrome(str) {
-    // Good luck!
-
-    return true;
+  //   return true;
+  // }
+  
+  function palindrome(str){
+    return str*2;
   }
-  
-  
+
   
   palindrome("eye");
