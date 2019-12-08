@@ -18,3 +18,7 @@ ignoreCase regex = /some string/i
 check for more than one occurance in a sting = /some sting/g
 strRegex.test(testStr) = return boolean if found
 testStr.match(strRegex) = returns the matched value
+check for /A-Za-z0-9_/ = /\w/ (checks all alphanumeric values plus underscore)
+check for /^A-Za-z0-9_/ =/\W/ (Checks everything but alphanumeric values plus underscore)
+input.replace(/[^a-z0-9]/gi, '')
+
