@@ -1,0 +1,16 @@
+#outputDiv .fa-check-circle{
+    color: green;
+    /* background-color: green; */
+    position: relative;
+    width: 20px;
+    height: 20px;
+    z-index: 5;
+}
+
+.cross-icon{
+    /* background-color: red; */
+    position: relative;
+    width: 20px;
+    height:20px;
+    display: block;
+}
