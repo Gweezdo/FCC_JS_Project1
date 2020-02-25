@@ -47,14 +47,14 @@
     // var answer = document.body.appendChild(newDiv);
     
     if(answer === true){
-      $(document).ready(function(){
-        $("#icon").addClass(".check-icon");
-      });
+      // $(document).ready(function(){
+        $("#check-icon").css("display", "block");
+      // });
       return newDiv.textContent = "Yes, it's a Palindrome!";
 
     }else if(answer === false) {
       $(document).ready(function(){
-        $(".icon").addClass(".cross-icon");
+        $("#cross-icon").addClass(".visible");
       });
       return newDiv.textContent = "Oops, not quite!";
 

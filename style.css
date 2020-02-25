@@ -1,16 +1,23 @@
-#outputDiv .fa-check-circle{
-    color: green;
-    /* background-color: green; */
-    position: relative;
-    width: 20px;
-    height: 20px;
+.visibility{
+    display: block;
+    left: 80px;
+}
+
+#outputDiv .icon{
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    padding: 15px;
+    margin: 10px;
+    /* display: none; */
     z-index: 5;
 }
 
-.cross-icon{
-    /* background-color: red; */
-    position: relative;
-    width: 20px;
-    height:20px;
-    display: block;
+#outputDiv #check-icon{
+    fill: green;
 }
+
+#outputDiv #cross-icon{
+    color: red;
+}
+
