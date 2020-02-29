@@ -8,27 +8,43 @@
     <title>Palindrome Checker</title>
 </head>
 <body>
-
     <div>
-        <h1 id="main-heading">Palindrome Checker</h1>
-        <p id="sub-heading">Enter any word or number to check if it is a palindrome. *Note: All special characters (@#$%*^_) will be ignored</p>
-        <!-- <p id="sub-heading">*Note: All special characters (@#$%*^_) will be ignored</p> -->
+        <h1 id="main-heading" class="heading">Palindrome Checker</h1>
+        <p id="sub-heading" class="heading">Enter any word or number to check if it is a palindrome. *Note: All special characters (@#$%*^_) will be ignored</p>
     </div>
 
-    <div>
-        
-        <input type="text" name="userInput" id="user-input" required>
+    <div id="input-field">
+        <input type="text" name="userInput"  id="user-input" placeholder="Enter number/text" required>
     </div>
 
     <div>
         <button id="btn" onclick=output()>Submit</button>
     </div>
-    
-    <div id="outputDiv">
-        <img id="check-icon" class="icon" src="/icons/check-circle-regular.svg" alt="check-icon"> 
-        <img id="cross-icon" class="icon" src="/icons/times-circle-regular.svg" alt="cross-icon"> 
+
+    <hr>
+
+    <div>
+        <p id="empty-input-msg" class="visibility">Please enter a word or number to check if it is a palindrome.</p>
+        <p id="yes-msg" class="visibility">It's a palindrome!</p>
+        <p id="no-msg" class="visibility">Not a palindrome.</p>
     </div>
 
+
+    <div class="output-container">
+        <div id="iconDiv">
+            <svg id="check-icon" class="icon visibility">
+                <use xlink:href="/icons/check-circle-regular.svg#icon1"></use>
+            </svg>
+
+            <svg id="cross-icon" class="icon visibility">
+                <use xlink:href="/icons/times-circle-regular.svg#icon2"></use>
+            </svg>
+        </div>
+
+        <div id="outputDiv">
+
+        </div>
+    </div>
     
     <script src="Project1.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>

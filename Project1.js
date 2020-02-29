@@ -3,7 +3,6 @@
   // turn this string into an array
   // initialize a new blank array for the revesed string to be pushed to
   // run for loop to reverse the string
-
   
   function palindrome(str) {
     
@@ -42,26 +41,53 @@
 
   
   function output(){
-    var newDiv = document.getElementById("outputDiv"); 
+    
     var answer = palindrome(document.getElementById('user-input').value); 
-    // var answer = document.body.appendChild(newDiv);
     
     if(answer === true){
-      // $(document).ready(function(){
-        $("#check-icon").css("display", "block");
-      // });
-      return newDiv.textContent = "Yes, it's a Palindrome!";
-
+      $("#check-icon").css("display", "block");
+      $("#cross-icon").css("display", "none");
+      var outputString = document.getElementById("yes-msg").textContent;
+      document.getElementById("outputDiv").innerHTML = outputString;
+      
     }else if(answer === false) {
-      $(document).ready(function(){
-        $("#cross-icon").addClass(".visible");
-      });
-      return newDiv.textContent = "Oops, not quite!";
-
+      $("#cross-icon").css("display", "block");
+      $("#check-icon").css("display", "none");
+      var outputString = document.getElementById("no-msg").textContent;
+      document.getElementById("outputDiv").innerHTML = outputString;
     }else{
-      return newDiv.textContent = "Enter a palindrome to check";
+      var outputString = document.getElementById("empty-input-msg").textContent;
+      document.getElementById("outputDiv").innerHTML = outputString;
+      $("#cross-icon").css("display", "none");
+      $("#check-icon").css("display", "none");
     }
   }
 
 
+  var blurred = false;
+  window.onblur = function() { blurred = true; };
+  window.onfocus = function() { blurred && (location.reload()); };
+
+
+  // function output(){
+  //   var newDiv = document.getElementById("outputDiv"); 
+  //   var answer = palindrome(document.getElementById('user-input').value); 
+  //   // var answer = document.body.appendChild(newDiv);
+    
+  //   if(answer === true){
+  //     // $(document).ready(function(){
+  //       $("#check-icon").css("display", "block");
+  //     // });
+  //     return newDiv.textContent = "Yes, it's a Palindrome!";
+
+  //   }else if(answer === false) {
+  //     $(document).ready(function(){
+  //       $("#cross-icon").addClass(".visible");
+  //     });
+  //     return newDiv.textContent = "Oops, not quite!";
+
+  //   }else{
+  //     return newDiv.textContent = "Enter a palindrome to check";
+  //   }
+  // }
   
