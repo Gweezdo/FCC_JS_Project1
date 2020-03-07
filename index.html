@@ -4,32 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="styleFinal.css">
-    
     <title>Palindrome Checker</title>
 </head>
-<body>
-    <div>
-        <h1 id="main-heading" class="heading">Palindrome Checker</h1>
-        <p id="sub-heading" class="heading">Enter any word or number to check if it is a palindrome. *Note: All special characters (@#$%*^_) will be ignored</p>
-    </div>
 
+<body>
+    <div class="heading">
+        <h1 id="main-heading" class="heading">Palindrome Checker</h1>
+        <p id="sub-heading" class="heading">Enter any word or number to check if it is a palindrome. All special characters (@ # $ % * ^ _) will be ignored.</p>
+    </div>
     <div id="input-field">
         <input type="text" name="userInput"  id="user-input" placeholder="Enter a word or a number" required>
         <button id="btn" onclick=output()>SUBMIT</button>
     </div>
-
-
-    <div>
-        <p id="empty-input-msg" class="visibility">Please enter a word or number to check if it is a palindrome.</p>
+    <div id="messages">
+        <!-- <p id="empty-input-msg" class="visibility">Please enter a word or number to check if it is a palindrome.</p> -->
         <p id="yes-msg" class="visibility">It's a palindrome!</p>
         <p id="no-msg" class="visibility">Not a palindrome.</p>
     </div>
-
-
     <div class="output-container">
         <div id="iconDiv">
             <svg id="check-icon" class="icon visibility">
-                <!-- <use xlink:href="/icons/check-circle-regular.svg#icon1"></use> -->
+                <use xlink:href="/icons/thumbs-up-emoji.svg#image0"></use>
             </svg>
 
             <svg id="cross-icon" class="icon visibility">

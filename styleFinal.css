@@ -12,35 +12,38 @@ body{
 }
 
 .heading{
-    /* position: absolute; */
+    position: relative;
     text-align: center;
-    /* font-family: Futura; */
-    font-style: normal;
-    color: #FFFFFF
+    font-family: Arial, Helvetica, sans-serif;
+    /* font-style: normal; */
+    color: #FFFFFF;
+    display: block;
+    margin: 0.4rem;
+    
 }
 
 #main-heading{
-    position: relative;
+    /* position: relative; */
     /* display: block; */
-    font-weight: 800;
+    font-weight: 600;
     font-size: 4.0rem;
     line-height: 5.5rem;
-    top: 16.8rem;
-    margin-left: 3.2rem;
-    margin-right: 3.2rem;
-    /* background-color: greenyellow; */
+    /* top: 168px; */
+    margin: 16.8rem 3.2rem 0 3.2rem;
+    background-color: purple;
 }
 
 #sub-heading{
-    position: relative;
+    /* position: relative; */
     /* display: block; */
     font-weight: 500;
     font-size: 2.0rem;
     line-height: 2.7rem;
-    top: 16.8rem;
+    /* top: 22.7rem; */
+    /* top: 150px; */
     margin-left: 3.2rem;
     margin-right: 3.2rem;
-    /* background-color: greenyellow; */
+    background-color: purple;
 }
 
 #input-field                {
@@ -48,7 +51,8 @@ body{
     width: 58.9rem;
     height: 5.6rem;
     left: calc(50% - 589px/2 - 0.5px);
-    top: 31.1rem;
+    margin: 5.7rem 0 0 0;
+    /* top: 31.1rem; */
     background: rgba(255, 255, 255, 0.7);
     border-radius: 4px;
 }
@@ -70,6 +74,11 @@ body{
     color: rgba(13, 11, 12, 0.5);
 }
 
+#user-input:focus{
+    background: rgba(255, 255, 255, 0.9);
+    color: #0D0B0C;
+}
+
 #btn{
     position: absolute;
     width: 13.0rem;
@@ -87,18 +96,55 @@ body{
 }
 
 .visibility{
-    display: none;
+    /* display: none; */
 }
 
 
 footer{
-    position: absolute;
+    position: relative;
     height: 4.8rem;
     width: 100%;
-    top: 67.2rem;
-    bottom: 0rem;
-    margin: 0rem;
-    background-color: yellow;
+    /* top: 100%; */
+    margin-top: 100vh;
+    background-color: red;
     /* background: #0090CE; */
+}
 
+footer p{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.2rem;
+    line-height: 1.6rem;
+    text-align: center;
+    color: #F2F2F2;
+    padding-top: 1.6rem;
+}
+
+#messages{
+    width: 50px;
+    height: 50px;
+    /* background-color: red; */
+}
+
+.output-container{
+    width: 50px;
+    height: 50px;
+    /* background-color: salmon; */
+}
+
+#check-icon{
+    position: absolute;
+    line-height: 137px;
+    width: 589px;
+    height: 106px;
+    left: calc(50% - 589px/2 - 0.5px);
+    background-color: peru;
+    /* margin: 0 100px 0 100px; */
+    text-align: center;
+}
+
+#image0{
+    position: absolute;
+    text-align: center;
+    left: 50%;
 }

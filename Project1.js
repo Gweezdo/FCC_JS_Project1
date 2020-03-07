@@ -55,12 +55,13 @@
       $("#check-icon").css("display", "none");
       var outputString = document.getElementById("no-msg").textContent;
       document.getElementById("outputDiv").innerHTML = outputString;
-    }else{
-      var outputString = document.getElementById("empty-input-msg").textContent;
-      document.getElementById("outputDiv").innerHTML = outputString;
-      $("#cross-icon").css("display", "none");
-      $("#check-icon").css("display", "none");
     }
+    // else{
+    //   var outputString = document.getElementById("empty-input-msg").textContent;
+    //   document.getElementById("outputDiv").innerHTML = outputString;
+    //   $("#cross-icon").css("display", "none");
+    //   $("#check-icon").css("display", "none");
+    // }
   }
 
 
