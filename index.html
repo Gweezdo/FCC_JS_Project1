@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="styleFinal.css">
     
     <title>Palindrome Checker</title>
 </head>
@@ -14,14 +14,10 @@
     </div>
 
     <div id="input-field">
-        <input type="text" name="userInput"  id="user-input" placeholder="Enter number/text" required>
+        <input type="text" name="userInput"  id="user-input" placeholder="Enter a word or a number" required>
+        <button id="btn" onclick=output()>SUBMIT</button>
     </div>
 
-    <div>
-        <button id="btn" onclick=output()>Submit</button>
-    </div>
-
-    <hr>
 
     <div>
         <p id="empty-input-msg" class="visibility">Please enter a word or number to check if it is a palindrome.</p>
