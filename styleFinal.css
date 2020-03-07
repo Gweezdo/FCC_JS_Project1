@@ -3,13 +3,18 @@ html{
 }
 
 body{
-    background: linear-gradient(180deg, #0468BF 21.39%, #049DD9 100%)
+    background: linear-gradient(180deg, #0468BF 21.39%, #049DD9 100%);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100%;
+    margin: 0;
+    /* padding: 0; */
 }
 
 .heading{
     /* position: absolute; */
     text-align: center;
-    font-family: Futura;
+    /* font-family: Futura; */
     font-style: normal;
     color: #FFFFFF
 }
@@ -49,7 +54,20 @@ body{
 }
 
 #user-input{
+    position: absolute;
+    height: 100%;
+    width: 45.9rem;
+    border: none;
+    border-radius: 0.4rem;
+    /* margin: 1.6rem; */
+    padding: 0 1.6rem 0 1.6rem;
 
+    font-style: normal;
+    font-weight: 500;
+    font-size: 2.0rem;
+    line-height: 2.7rem;
+
+    color: rgba(13, 11, 12, 0.5);
 }
 
 #btn{
@@ -58,7 +76,7 @@ body{
     height: 100%;
     background: #049DD9;
     border: none;
-    border-radius: 0px 4px 4px 0px;
+    border-radius: 0rem 0.4rem 0.4rem 0rem;
     right: 0;
 
     font-style: normal;
@@ -66,4 +84,21 @@ body{
     font-size: 2.0rem;
     line-height: 2.7rem;
     color: white;
+}
+
+.visibility{
+    display: none;
+}
+
+
+footer{
+    position: absolute;
+    height: 4.8rem;
+    width: 100%;
+    top: 67.2rem;
+    bottom: 0rem;
+    margin: 0rem;
+    background-color: yellow;
+    /* background: #0090CE; */
+
 }
